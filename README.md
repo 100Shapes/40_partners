@@ -1,2 +1,2 @@
-40_patners
+40_partners
 ==========
