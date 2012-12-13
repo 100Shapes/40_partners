@@ -759,7 +759,7 @@ section.intro {
   background-color: #000;
   background-image: url('../img/section-intro.jpg');
   background-attachment: fixed;
-  background-size: auto 540px;
+  background-size: auto 75%;
 }
 section.intro img {
   padding-top: 50px;
