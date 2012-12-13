@@ -6,7 +6,7 @@
 body {
 	margin: 0;
 	background-color: @background-color-dark;
-	font-family: @font-family;
+	font-family: @heading-font-family;
 	color: #fff;
 }
 
@@ -34,7 +34,7 @@ h4 {
 
 p {
 	color: @body-copy-color;
-	font-family: 'Verdana';
+	font-family: @body-font-family;
 	font-size: 12px;
 	line-height: 24px;
 }
@@ -46,6 +46,20 @@ a {
 	line-height: 24px;
 	text-decoration: none;
 	font-weight: bold;
+}
+
+ol {
+	margin-top: @ws-unit*3;
+}
+
+li {
+	display: inline-block;
+	list-style-type: none;
+	margin-right: @ws-unit*2;
+
+	&:last-child{
+		margin-right: 0;
+	}
 }
 
 .adr {
@@ -60,7 +74,7 @@ a {
 
 .headings-left{
 	.column(4);
-	height: 500px;
+	height: @ws-unit*25;
 }
 
 .content-right {
@@ -69,12 +83,14 @@ a {
 
 .icon-panel {
 	.push(4);
-	padding-top: 65px;
+	padding-top: @ws-unit*3.25;
 }
 
 .icon {
-	.column(2);
-	.push(0.5);
+	.column(2.5);
+	text-align: center;
+	position: relative;
+	
 }
 
 .content-panel {
@@ -82,7 +98,7 @@ a {
 }
 
 .container {
-	max-width: 960px;
+	width: 960px;
 	margin: 0 auto;
 }
 
@@ -90,15 +106,35 @@ section {
 	.clearfix();
 	&.intro {
 		.white();
-		background-image: url('../img/section-intro.jpg');
 		.cover();
+		background-image: url('../img/section-intro.jpg');
+		background-attachment:fixed;
+		background-size: auto 540px;
 
 		img {
-			padding-top: 50px;
+			padding-top: @ws-unit*2.5;
+		}
+
+		a {
+			font-family: @other-font-family;
+			font-size: 18px;
 		}
 	}
 
 	&.what-we-are {
+
+		.content {
+			margin-top: @ws-unit;
+		}
+		
+
+		p {	
+			font-family: @heading-font-family;
+			font-size: 18px;
+			position: absolute;
+			width: 100%;
+			top: @ws-unit*6;
+		}
 
 	}
 
@@ -111,7 +147,7 @@ section {
 			padding-top: 97px;
 
 			p{
-				font-family: @font-family;
+				font-family: @heading-font-family;
 				font-size: 18px;
 			}
 		}
@@ -123,6 +159,15 @@ section {
 			
 		}
 
+		h4, a{
+
+			color: @body-copy-color;
+
+		}
+
+
+
+
 	}
 
 	&.how-to-contact-us {
@@ -130,7 +175,7 @@ section {
 		background-image: url('../img/section-map.jpg');
 
 		.content-panel{
-			padding-top: 200px;
+			padding-top: @ws-unit*10;
 		}
 
 		p {
@@ -142,5 +187,5 @@ section {
 
 footer {
 	background-color: #000;
-	padding: 14px 50px;
+	padding: @ws-unit*0.7 0;
 }

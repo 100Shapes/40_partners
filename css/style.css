@@ -684,6 +684,17 @@ a {
   text-decoration: none;
   font-weight: bold;
 }
+ol {
+  margin-top: 60px;
+}
+li {
+  display: inline-block;
+  list-style-type: none;
+  margin-right: 40px;
+}
+li:last-child {
+  margin-right: 0;
+}
 .adr {
   font-family: 'Verdana';
   font-size: 12px;
@@ -712,9 +723,10 @@ a {
 .icon {
   display: inline;
   float: left;
-  width: 140px;
+  width: 180px;
   margin: 0 10px;
-  margin-left: 50px;
+  text-align: center;
+  position: relative;
 }
 .content-panel {
   display: inline;
@@ -723,7 +735,7 @@ a {
   margin: 0 10px;
 }
 .container {
-  max-width: 960px;
+  width: 960px;
   margin: 0 auto;
 }
 section {
@@ -739,16 +751,32 @@ section:after {
 }
 section.intro {
   color: #fff;
-  background-image: url('../img/section-intro.jpg');
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   background-repeat: no-repeat;
   background-color: #000;
+  background-image: url('../img/section-intro.jpg');
+  background-attachment: fixed;
+  background-size: auto 540px;
 }
 section.intro img {
   padding-top: 50px;
+}
+section.intro a {
+  font-family: 'Arial';
+  font-size: 18px;
+}
+section.what-we-are .content {
+  margin-top: 20px;
+}
+section.what-we-are p {
+  font-family: 'nevis';
+  font-size: 18px;
+  position: absolute;
+  width: 100%;
+  top: 120px;
 }
 section.what-we-believe {
   color: #fff;
@@ -770,6 +798,10 @@ section.what-we-believe .content-right p {
 section.who-we-are .content-panel {
   padding-top: 94px;
 }
+section.who-we-are h4,
+section.who-we-are a {
+  color: #999999;
+}
 section.how-to-contact-us {
   color: #fff;
   background-image: url('../img/section-map.jpg');
@@ -782,5 +814,5 @@ section.how-to-contact-us p {
 }
 footer {
   background-color: #000;
-  padding: 14px 50px;
+  padding: 14px 0;
 }
