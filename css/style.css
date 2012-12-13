@@ -690,7 +690,7 @@ ol {
 li {
   display: inline-block;
   list-style-type: none;
-  margin-right: 38px;
+  margin-right: 30px;
 }
 li:last-child {
   margin-right: 0;
