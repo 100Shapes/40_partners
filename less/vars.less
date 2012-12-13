@@ -1,0 +1,51 @@
+@import "grid";
+@import "elements";
+
+@background-color-dark: #191919;
+
+@body-copy-color: #999;
+
+@link-color-base: #d06a78;
+@link-color-hover: @link-color-base;
+
+@header-color-light: #fff;
+@header-color-dark: #666;
+
+@ws-unit: @gutter-width * 1px;
+
+@font-face {
+    font-family: 'nevis';
+    src: url('../typography/nevis.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-family: 'nevis';
+
+.visuallyhidden() {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.makeContainer() {
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+.cover() {
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #000;
+    //background-size: 100% 100%;
+}
+
+
