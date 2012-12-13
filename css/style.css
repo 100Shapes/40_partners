@@ -760,6 +760,7 @@ section#intro {
   background-image: url('../img/section-intro.jpg');
   background-attachment: fixed;
   background-size: auto 75%;
+  background-repeat: repeat;
 }
 section#intro img {
   padding-top: 50px;
