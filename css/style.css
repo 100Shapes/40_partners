@@ -645,6 +645,7 @@ body:after {
   font-style: normal;
 }
 body {
+  margin: 0;
   background-color: #191919;
   font-family: 'nevis';
   color: #fff;
@@ -664,12 +665,29 @@ h2 {
 }
 h3 {
   font-size: 36px;
+  color: #999999;
 }
 h4 {
   font-size: 18px;
 }
 p {
   color: #999999;
+  font-family: 'Verdana';
+  font-size: 12px;
+  line-height: 24px;
+}
+a {
+  color: #fff;
+  font-family: 'Verdana';
+  font-size: 12px;
+  line-height: 24px;
+  text-decoration: none;
+  font-weight: bold;
+}
+.adr {
+  font-family: 'Verdana';
+  font-size: 12px;
+  line-height: 24px;
 }
 .white {
   color: #fff;
@@ -696,6 +714,7 @@ p {
   float: left;
   width: 140px;
   margin: 0 10px;
+  margin-left: 50px;
 }
 .content-panel {
   display: inline;
@@ -703,8 +722,20 @@ p {
   width: 300px;
   margin: 0 10px;
 }
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
 section {
-  height: 500px;
+  *zoom: 1;
+}
+section:before,
+section:after {
+  content: "";
+  display: table;
+}
+section:after {
+  clear: both;
 }
 section.intro {
   color: #fff;
@@ -715,6 +746,9 @@ section.intro {
   background-size: cover;
   background-repeat: no-repeat;
   background-color: #000;
+}
+section.intro img {
+  padding-top: 50px;
 }
 section.what-we-believe {
   color: #fff;
@@ -727,7 +761,11 @@ section.what-we-believe {
   background-color: #000;
 }
 section.what-we-believe .content-right {
-  padding-top: 102px;
+  padding-top: 97px;
+}
+section.what-we-believe .content-right p {
+  font-family: 'nevis';
+  font-size: 18px;
 }
 section.who-we-are .content-panel {
   padding-top: 94px;
@@ -737,9 +775,12 @@ section.how-to-contact-us {
   background-image: url('../img/section-map.jpg');
 }
 section.how-to-contact-us .content-panel {
-  padding-top: 94px;
+  padding-top: 200px;
+}
+section.how-to-contact-us p {
+  color: #fff;
 }
 footer {
   background-color: #000;
-  padding: 14px 0;
+  padding: 14px 50px;
 }

@@ -4,6 +4,7 @@
 
 
 body {
+	margin: 0;
 	background-color: @background-color-dark;
 	font-family: @font-family;
 	color: #fff;
@@ -24,6 +25,7 @@ h2 {
 
 h3 {
 	font-size: 36px;
+	color: @body-copy-color;
 }
 
 h4 {
@@ -32,6 +34,24 @@ h4 {
 
 p {
 	color: @body-copy-color;
+	font-family: 'Verdana';
+	font-size: 12px;
+	line-height: 24px;
+}
+
+a {
+	color: #fff;
+	font-family: 'Verdana';
+	font-size: 12px;
+	line-height: 24px;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.adr {
+	font-family: 'Verdana';
+	font-size: 12px;
+	line-height: 24px;
 }
 
 .white {
@@ -54,18 +74,28 @@ p {
 
 .icon {
 	.column(2);
+	.push(0.5);
 }
 
 .content-panel {
 	.column(4);
 }
 
+.container {
+	max-width: 960px;
+	margin: 0 auto;
+}
+
 section {
-	height: 500px;
+	.clearfix();
 	&.intro {
 		.white();
 		background-image: url('../img/section-intro.jpg');
 		.cover();
+
+		img {
+			padding-top: 50px;
+		}
 	}
 
 	&.what-we-are {
@@ -78,13 +108,19 @@ section {
 		.cover();
 
 		.content-right {
-			padding-top: 102px;
+			padding-top: 97px;
+
+			p{
+				font-family: @font-family;
+				font-size: 18px;
+			}
 		}
 	}
 
 	&.who-we-are {
 		.content-panel{
 			padding-top: 94px;
+			
 		}
 
 	}
@@ -94,7 +130,11 @@ section {
 		background-image: url('../img/section-map.jpg');
 
 		.content-panel{
-			padding-top: 94px;
+			padding-top: 200px;
+		}
+
+		p {
+			.white();
 		}
 	}
 
@@ -102,5 +142,5 @@ section {
 
 footer {
 	background-color: #000;
-	padding: 14px 0;
+	padding: 14px 50px;
 }
