@@ -690,7 +690,7 @@ ol {
 li {
   display: inline-block;
   list-style-type: none;
-  margin-right: 40px;
+  margin-right: 38px;
 }
 li:last-child {
   margin-right: 0;
@@ -749,7 +749,7 @@ section:after {
 section:after {
   clear: both;
 }
-section.intro {
+section#intro {
   color: #fff;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -761,24 +761,24 @@ section.intro {
   background-attachment: fixed;
   background-size: auto 75%;
 }
-section.intro img {
+section#intro img {
   padding-top: 50px;
 }
-section.intro a {
+section#intro a {
   font-family: 'Arial';
   font-size: 18px;
 }
-section.what-we-are .content {
+section#what-we-are .content {
   margin-top: 20px;
 }
-section.what-we-are p {
+section#what-we-are p {
   font-family: 'nevis';
   font-size: 18px;
   position: absolute;
   width: 100%;
   top: 120px;
 }
-section.what-we-believe {
+section#what-we-believe {
   color: #fff;
   background-image: url('../img/section-intro.jpg');
   -webkit-background-size: cover;
@@ -788,28 +788,28 @@ section.what-we-believe {
   background-repeat: no-repeat;
   background-color: #000;
 }
-section.what-we-believe .content-right {
+section#what-we-believe .content-right {
   padding-top: 97px;
 }
-section.what-we-believe .content-right p {
+section#what-we-believe .content-right p {
   font-family: 'nevis';
   font-size: 18px;
 }
-section.who-we-are .content-panel {
+section#who-we-are .content-panel {
   padding-top: 94px;
 }
-section.who-we-are h4,
-section.who-we-are a {
+section#who-we-are h4,
+section#who-we-are a {
   color: #999999;
 }
-section.how-to-contact-us {
+section#how-to-contact-us {
   color: #fff;
   background-image: url('../img/section-map.jpg');
 }
-section.how-to-contact-us .content-panel {
+section#how-to-contact-us .content-panel {
   padding-top: 200px;
 }
-section.how-to-contact-us p {
+section#how-to-contact-us p {
   color: #fff;
 }
 footer {
