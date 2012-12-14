@@ -646,7 +646,15 @@ body:after {
 }
 body {
   margin: 0;
-  background-color: #191919;
+  background-image: url('../img/section-intro.jpg');
+  background-attachment: fixed;
+  background-size: auto 75%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #000;
   font-family: 'nevis';
   color: #fff;
 }
@@ -740,6 +748,7 @@ li:last-child {
 }
 section {
   *zoom: 1;
+  min-width: 960px;
 }
 section:before,
 section:after {
@@ -751,16 +760,6 @@ section:after {
 }
 section#intro {
   color: #fff;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-color: #000;
-  background-image: url('../img/section-intro.jpg');
-  background-attachment: fixed;
-  background-size: auto 75%;
-  background-repeat: repeat;
 }
 section#intro img {
   padding-top: 50px;
@@ -768,6 +767,9 @@ section#intro img {
 section#intro a {
   font-family: 'Arial';
   font-size: 18px;
+}
+section#what-we-are {
+  background-color: #191919;
 }
 section#what-we-are .content {
   margin-top: 20px;
@@ -781,13 +783,6 @@ section#what-we-are p {
 }
 section#what-we-believe {
   color: #fff;
-  background-image: url('../img/section-intro.jpg');
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-color: #000;
 }
 section#what-we-believe .content-right {
   padding-top: 97px;
@@ -795,6 +790,9 @@ section#what-we-believe .content-right {
 section#what-we-believe .content-right p {
   font-family: 'nevis';
   font-size: 18px;
+}
+section#who-we-are {
+  background-color: #191919;
 }
 section#who-we-are .content-panel {
   padding-top: 94px;
