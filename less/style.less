@@ -44,7 +44,7 @@ p {
 
 a {
 	color: #fff;
-	font-family: 'Verdana';
+	font-family: @body-font-family;
 	font-size: 12px;
 	line-height: 24px;
 	text-decoration: none;
@@ -66,7 +66,7 @@ li {
 }
 
 .adr {
-	font-family: 'Verdana';
+	font-family: @body-font-family;
 	font-size: 12px;
 	line-height: 24px;
 }
@@ -101,6 +101,7 @@ li {
 }
 
 .container {
+	.clearfix;
 	width: 960px;
 	margin: 0 auto;
 }
@@ -108,84 +109,101 @@ li {
 section {
 	.clearfix();
 	min-width: 960px;
-	&#intro {
-		.white();
+}
 
-		img {
-			padding-top: @ws-unit*2.5;
-		}
+#intro {
+	.white();
 
-		a {
-			font-family: @other-font-family;
-			font-size: 18px;
-		}
+	img {
+		padding-top: @ws-unit*2.5;
 	}
 
-	&#what-we-are {
-		background-color: @background-color-dark;
-		
-
-		.content {
-			margin-top: @ws-unit;
-		}
-		
-
-		p {	
-			font-family: @heading-font-family;
-			font-size: 18px;
-			position: absolute;
-			width: 100%;
-			top: @ws-unit*6;
-		}
-
+	a {
+		font-family: @other-font-family;
+		font-size: 18px;
 	}
+}
 
-	&#what-we-believe {
-		.white();
+#what-we-are {
+	background-color: @background-color-dark;
+	
 
-
-		.content-right {
-			padding-top: 97px;
-
-			p{
-				font-family: @heading-font-family;
-				font-size: 18px;
-			}
-		}
+	.content {
+		margin-top: @ws-unit;
 	}
+	
 
-	&#who-we-are {
-		background-color: @background-color-dark;
-		.content-panel{
-			padding-top: 94px;
-			
-		}
-
-		h4, a{
-
-			color: @body-copy-color;
-
-		}
-
-
-
-
-	}
-
-	&#how-to-contact-us {
-		.white();
-		background-image: url('../img/section-map.jpg');
-
-		.content-panel{
-			padding-top: @ws-unit*10;
-		}
-
-		p {
-			.white();
-		}
+	p {	
+		font-family: @heading-font-family;
+		font-size: 18px;
+		position: absolute;
+		width: 100%;
+		top: @ws-unit*6;
 	}
 
 }
+
+#what-we-believe {
+	.white();
+
+
+	.content-right {
+		padding-top: 97px;
+
+		p{
+			font-family: @heading-font-family;
+			font-size: 18px;
+		}
+	}
+}
+
+.read-more {
+	display: block;
+	margin-top: @ws-unit;
+}
+
+#who-we-are {
+	background-color: @background-color-dark;
+	padding: 94px 0;
+	
+	.bio {
+		.row(8);
+		max-height: 320px;
+		overflow: hidden;
+	}
+
+	.content-panel {
+		.column(4,8);
+	}
+
+	.headings-left {
+		height: 372px;
+	}
+
+	h4, a {
+
+		color: @body-copy-color;
+
+	}
+
+
+
+
+}
+
+#how-to-contact-us {
+	.white();
+	background-image: url('../img/section-map.jpg');
+
+	.content-panel{
+		padding-top: @ws-unit*10;
+	}
+
+	p {
+		.white();
+	}
+}
+
 
 footer {
 	background-color: #000;
