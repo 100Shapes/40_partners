@@ -655,7 +655,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-color: #000;
-  font-family: 'nevis';
+  font-family: nevis, Arial;
   color: #fff;
 }
 h1 {
@@ -680,7 +680,7 @@ h4 {
 }
 p {
   color: #999999;
-  font-family: 'Verdana';
+  font-family: Verdana, sans-serif;
   font-size: 12px;
   line-height: 24px;
 }
@@ -765,7 +765,7 @@ section#intro img {
   padding-top: 50px;
 }
 section#intro a {
-  font-family: 'Arial';
+  font-family: Arial;
   font-size: 18px;
 }
 section#what-we-are {
@@ -775,7 +775,7 @@ section#what-we-are .content {
   margin-top: 20px;
 }
 section#what-we-are p {
-  font-family: 'nevis';
+  font-family: nevis, Arial;
   font-size: 18px;
   position: absolute;
   width: 100%;
@@ -788,7 +788,7 @@ section#what-we-believe .content-right {
   padding-top: 97px;
 }
 section#what-we-believe .content-right p {
-  font-family: 'nevis';
+  font-family: nevis, Arial;
   font-size: 18px;
 }
 section#who-we-are {
