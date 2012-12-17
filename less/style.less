@@ -14,7 +14,7 @@ body {
 }
 
 h1 {
-	font-size: 36px;
+	font-size: 34px;
 	padding-top: 152px;
 }
 
@@ -23,11 +23,11 @@ h2 {
 	.opacity(0.2);
 	margin-top: 100px;
 	color: #fff;
-	font-size: 36px;
+	font-size: 34px;
 }
 
 h3 {
-	font-size: 36px;
+	font-size: 34px;
 	color: @body-copy-color;
 }
 
@@ -99,14 +99,18 @@ li {
 }
 
 .icon-panel {
-	padding-top: @ws-unit*3.25;
+	padding-top: @ws-unit*4.6;
 }
 
 .icon {
 	.column(2.66);
-	text-align: center;
 	position: relative;
-	
+	margin-bottom: 100px;
+
+	a {
+		display:block;
+		margin-top: 12px;
+	}
 }
 
 .content-panel {
@@ -117,6 +121,12 @@ li {
 	.clearfix;
 	width: 960px;
 	margin: 0 auto;
+}
+
+.what-expand {
+	max-height: 310px;
+	overflow: hidden;
+
 }
 
 section {
@@ -139,25 +149,20 @@ section {
 
 #what-we-are {
 	background-color: @background-color-dark;
-	padding-bottom: 100px;
-	
 
-	.content {
-		margin-top: @ws-unit;
+
+	h2 {
+		margin-top: @ws-unit*5.5; 
 	}
 	
+	
 	img {
-		display:none;
+	//	display:none;
 	}
 
 	h4 {
 		color: @background-color-red;
-		text-align: left;
 
-	}
-
-	p {	
-		text-align: left;
 	}
 
 }
@@ -167,8 +172,8 @@ section {
 
 
 	.content-right {
-		padding-top: 97px;
-		padding-bottom: 100px;
+		padding-top: @ws-unit*5;
+		padding-bottom: @ws-unit*5;
 
 		p{
 			font-family: @heading-font-family;
@@ -185,10 +190,11 @@ section {
 
 #who-we-are {
 	background-color: @background-color-dark;
-	padding: 94px 0;
+	padding-bottom: 94px;
 	
 	.bio {
 		.row(8);
+		margin-top: 88px;
 		max-height: 320px;
 		overflow: hidden;
 	}

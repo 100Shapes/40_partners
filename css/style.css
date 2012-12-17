@@ -665,7 +665,7 @@ body {
   color: #fff;
 }
 h1 {
-  font-size: 36px;
+  font-size: 34px;
   padding-top: 152px;
 }
 h2 {
@@ -675,10 +675,10 @@ h2 {
   opacity: 0.2;
   margin-top: 100px;
   color: #fff;
-  font-size: 36px;
+  font-size: 34px;
 }
 h3 {
-  font-size: 36px;
+  font-size: 34px;
   color: #999999;
 }
 h4 {
@@ -741,15 +741,19 @@ li:last-child {
   margin: 0 10px;
 }
 .icon-panel {
-  padding-top: 65px;
+  padding-top: 92px;
 }
 .icon {
   display: inline;
   float: left;
   width: 192.8px;
   margin: 0 10px;
-  text-align: center;
   position: relative;
+  margin-bottom: 100px;
+}
+.icon a {
+  display: block;
+  margin-top: 12px;
 }
 .content-panel {
   display: inline;
@@ -769,6 +773,10 @@ li:last-child {
 }
 .container:after {
   clear: both;
+}
+.what-expand {
+  max-height: 310px;
+  overflow: hidden;
 }
 section {
   *zoom: 1;
@@ -794,26 +802,18 @@ section:after {
 }
 #what-we-are {
   background-color: #191919;
-  padding-bottom: 100px;
 }
-#what-we-are .content {
-  margin-top: 20px;
-}
-#what-we-are img {
-  display: none;
+#what-we-are h2 {
+  margin-top: 110px;
 }
 #what-we-are h4 {
   color: #d01f3a;
-  text-align: left;
-}
-#what-we-are p {
-  text-align: left;
 }
 #what-we-believe {
   color: #fff;
 }
 #what-we-believe .content-right {
-  padding-top: 97px;
+  padding-top: 100px;
   padding-bottom: 100px;
 }
 #what-we-believe .content-right p {
@@ -827,13 +827,14 @@ section:after {
 }
 #who-we-are {
   background-color: #191919;
-  padding: 94px 0;
+  padding-bottom: 94px;
 }
 #who-we-are .bio {
   display: block;
   width: 660px;
   margin: 0 -10px;
   *zoom: 1;
+  margin-top: 88px;
   max-height: 320px;
   overflow: hidden;
 }
