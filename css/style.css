@@ -690,7 +690,6 @@ a {
   font-size: 12px;
   line-height: 24px;
   text-decoration: none;
-  font-weight: bold;
 }
 ol {
   margin-top: 60px;
@@ -710,6 +709,13 @@ li:last-child {
 }
 .white {
   color: #fff;
+}
+.quote {
+  font-family: Arial;
+  font-style: italic;
+}
+.gmap {
+  font-weight: bold;
 }
 .headings-left {
   display: inline;
@@ -795,6 +801,7 @@ section:after {
 }
 #what-we-believe .content-right {
   padding-top: 97px;
+  padding-bottom: 100px;
 }
 #what-we-believe .content-right p {
   font-family: nevis, Arial;
