@@ -15,7 +15,7 @@ body {
 
 h1 {
 	font-size: 36px;
-	padding-top: 180px;
+	padding-top: 152px;
 }
 
 
@@ -43,15 +43,21 @@ p {
 }
 
 a {
-	color: #fff;
+	color: @links-color;
 	font-family: @body-font-family;
 	font-size: 12px;
 	line-height: 24px;
 	text-decoration: none;
+
+	&:hover{
+		color: #fff;
+	
+	}
 }
 
 ol {
 	margin-top: @ws-unit*3;
+	padding: 0;
 }
 
 li {
@@ -93,12 +99,11 @@ li {
 }
 
 .icon-panel {
-	.push(4);
 	padding-top: @ws-unit*3.25;
 }
 
 .icon {
-	.column(2.5);
+	.column(2.66);
 	text-align: center;
 	position: relative;
 	
@@ -141,11 +146,11 @@ section {
 		margin-top: @ws-unit;
 	}
 	
-	img{
+	img {
 		display:none;
 	}
 
-	h4{
+	h4 {
 		color: @background-color-red;
 		text-align: left;
 
@@ -167,7 +172,8 @@ section {
 
 		p{
 			font-family: @heading-font-family;
-			font-size: 18px;
+			font-size: 14px;
+			line-height: 24px;
 		}
 	}
 }
@@ -195,7 +201,7 @@ section {
 		height: 372px;
 	}
 
-	h4, a {
+	h4 {
 
 		color: @body-copy-color;
 
