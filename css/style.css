@@ -840,6 +840,9 @@ section:after {
 #how-to-contact-us {
   color: #fff;
   background-image: url('../img/section-map.jpg');
+  background-repeat: no-repeat;
+  background-color: #d01f3a;
+  background-position: 50% 50%;
 }
 #how-to-contact-us .content-panel {
   padding-top: 200px;
