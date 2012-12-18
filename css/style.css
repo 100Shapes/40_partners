@@ -666,13 +666,13 @@ body {
 }
 h1 {
   font-size: 34px;
-  padding-top: 152px;
+  padding-top: 250px;
 }
 h2 {
-  -moz-opacity: 0.2;
-  -khtml-opacity: 0.2;
-  -webkit-opacity: 0.2;
-  opacity: 0.2;
+  -moz-opacity: 0.3;
+  -khtml-opacity: 0.3;
+  -webkit-opacity: 0.3;
+  opacity: 0.3;
   margin-top: 100px;
   color: #fff;
   font-size: 34px;
@@ -702,6 +702,7 @@ a:hover {
 }
 ol {
   margin-top: 60px;
+  margin-bottom: 250px;
   padding: 0;
 }
 li {
@@ -835,7 +836,7 @@ section:after {
   margin: 0 -10px;
   *zoom: 1;
   margin-top: 88px;
-  max-height: 320px;
+  max-height: 260px;
   overflow: hidden;
 }
 #who-we-are .bio:before,
